@@ -30,10 +30,14 @@ public class Main {
         desktop.hagoCosasDeDevice();
         configurationResolverFactory.create(desktop).queConfigurationResolverSoy();
 
-
         Device otherDevice = new OtherDevice();
         otherDevice.hagoCosasDeDevice();
         configurationResolverFactory.create(otherDevice).queConfigurationResolverSoy();
+
+        //Otro Objeto Configurable que implementa ConfigurableObject
+        ConfigurableObject otroObjetoConfigurable = new OtroObjetoConfigurable();
+        configurationResolverFactory.create(otroObjetoConfigurable).queConfigurationResolverSoy();
+
 
     }
 

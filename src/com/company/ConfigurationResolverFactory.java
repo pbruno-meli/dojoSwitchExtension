@@ -25,4 +25,9 @@ public class ConfigurationResolverFactory implements ConfigurationFactory {
     public  ConfigurationResolver buildForBrasil(){
         return new ConfigurationResolverBrasilImp();
     }
+
+    @Override
+    public ConfigurationResolver builForOtherConfigurableObject() {
+        return new ConfigurationResolverOtherConfigurableObjectImp();
+    }
 }

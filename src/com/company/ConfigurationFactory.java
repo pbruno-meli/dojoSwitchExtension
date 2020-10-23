@@ -14,4 +14,6 @@ public interface ConfigurationFactory {
     ConfigurationResolver buildForArgentina();
 
     ConfigurationResolver buildForBrasil();
+
+    ConfigurationResolver builForOtherConfigurableObject();
 }
